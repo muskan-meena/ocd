@@ -1,3 +1,4 @@
+ques= 1 (valid anagram )
 TC=O(NLOGN)
 SC=O(1)
 class Solution {
@@ -8,16 +9,13 @@ public:
         }
         sort(s.begin(), s.end());
         sort(t.begin(), t.end());
-
-
-        return (s==t);
+          return s==t;
 
     }
 };
-//ques->2longest common pefix
-// TC : O(n^2) 
-//SC : O(1)
-
+ques=2(longest common pefix)
+TC : O(n^2) 
+SC : O(1)
 class Solution {
     public:
         string longestCommonPrefix(vector<string>& strs) {
