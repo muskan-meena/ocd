@@ -4,47 +4,31 @@ SC=O(1)
 class Solution {
 public:
     void deleteNode(ListNode* node) {
-        node->val = node->next->val; 
-        ListNode* temp = node->next; 
+        node->val = node->next->val;
         node->next = node->next->next;
-        delete temp;  
     }
 };
 
-ques 2 (
+ques 2 (linked list insertion at end )
+TC=O(n)
+SC=O(1)
 
-
-
-// Definition for singly-linked list node
-struct Node {
-    int data;
-    Node* next;
-    
-    Node(int val) { 
-        data = val; 
-        next = nullptr; 
-    }
-};
-
-// Function to insert a node at the end of the linked list
+class solution {
+public:
 Node* insertAtEnd(Node* head, int x) {
     Node* newNode = new Node(x);
-    
-    // If the linked list is empty
     if (head == nullptr) {
         return newNode;
     }
-
-    Node* temp = head;
+     Node* temp = head;
     
-    // Traverse to the last node
     while (temp->next != nullptr) {
         temp = temp->next;
     }
     
-    // Insert the new node at the end
     temp->next = newNode;
 
     return head;
-}
+  }
+};
 
