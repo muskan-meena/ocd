@@ -15,20 +15,16 @@ SC=O(1)
 
 class solution {
 public:
-Node* insertAtEnd(Node* head, int x) {
-    Node* newNode = new Node(x);
-    if (head == nullptr) {
-        return newNode;
-    }
-     Node* temp = head;
+ListNode* insertAtEnd(ListNode* head, int value) {
+    ListNode* newNode = new ListNode(value);
+    if (!head)  return newNode;
     
-    while (temp->next != nullptr) {
-        temp = temp->next;
+     ListNode* current = head;
+      while (current->next) {
+        current = current->next;
     }
-    
-    temp->next = newNode;
-
-    return head;
+     current->next = newNode;
+      return head;
   }
 };
 
