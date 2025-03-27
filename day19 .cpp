@@ -1,31 +1,29 @@
-ques1( )
+ques1(maximum nesting depth of the parentheses )
 TC=O(n)
 SC=O(1)
-using namespace std;
 
+class solution{
+public:
 int maxDepth(string s) {
-    int max_depth = 0, current_depth = 0;
-    
-    for (char ch : s) {
-        if (ch == '(') {
-            current_depth++;
-            max_depth = max(max_depth, current_depth);
-        } else if (ch == ')') {
-            current_depth--;
+    int depth = 0, max_depth = 0;
+    for (int i = 0; i < s.length(); i++ ) {
+        if (s[i] == '(') {
+            depth++;
+            max_depth = max(max_depth,depth);
+        } else if (s[i] == ')') {
+             depth--;
         }
     }
     
     return max_depth;
-}
+  }
+};
 
-
-
-ques 2 ( )
+ques 2 (romen to integer )
 TC=O(n)
 SC=O(1)
-
-using namespace std;
-
+class solution {
+public:
 int romanToInt(string s) {
     unordered_map<char, int> romanValues = {
         {'I', 1}, {'V', 5}, {'X', 10}, {'L', 50}, 
