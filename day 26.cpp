@@ -1,4 +1,4 @@
-ques 1 ()
+ques 1 (doubly linked list insertion at given position)
 TC=O()
 SC=O()
 
@@ -17,18 +17,15 @@ SC=O()
 
 class Solution {
 public:
-    Node* insertAfter(Node* head, int pos, int val) {
+    Node *addNode(Node* head, int pos, int val) {
         Node* newNode = new Node(val);
         Node* curr = head;
        
         for (int i = 0; i < pos && curr != nullptr; i++) {
             curr = curr->next;
         }
-
-       
         if (!curr) return head;
-
-        
+     
         newNode->next = curr->next;
         newNode->prev = curr;
         
@@ -42,12 +39,11 @@ public:
     }
 };
 
-ques 2 ( search linked list)
+ques 2 ( search in linked list)
 TC=O(n)
 SC=O(1)
 
-/**
- * Definition for singly-linked list.
+/* linked list node
  * struct ListNode {
  *     int val;
  *     ListNode *next;
@@ -57,12 +53,14 @@ SC=O(1)
 
 class Solution {
 public:
-    bool searchKey(ListNode* head, int key) {
+    bool searchKey(int n , ListNode* head, int key) {
         while (head != nullptr) {
-            if (head->val == key) 
+            if (head->val == key){
                 return true;
+            }else {
             head = head->next;
         }
+      } 
         return false;
     }
 };
