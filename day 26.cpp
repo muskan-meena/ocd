@@ -1,4 +1,6 @@
-
+ques 1 ()
+TC=O()
+SC=O()
 
 class Solution {
 public:
@@ -6,12 +8,15 @@ public:
         Node* newNode = new Node(val);
         Node* curr = head;
         
+     
         for (int i = 0; i < pos && curr != nullptr; i++) {
             curr = curr->next;
         }
+
+       
         if (!curr) return head;
 
-        
+       
         newNode->next = curr->next;
         newNode->prev = curr;
         
@@ -24,3 +29,8 @@ public:
         return head;
     }
 };
+
+
+
+ques 2 ()
+TS=O
