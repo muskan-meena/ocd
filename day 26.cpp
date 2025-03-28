@@ -2,8 +2,8 @@ ques 1 ()
 TC=O()
 SC=O()
 
-// Definition for a doubly-linked list node
-/*struct Node {
+/* Definition for a doubly-linked list node
+ struct Node {
    int val;
    Node* next;
    Node* prev;
