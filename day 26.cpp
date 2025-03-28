@@ -41,3 +41,28 @@ public:
         return head;
     }
 };
+
+ques 2 ( search linked list)
+TC=O(n)
+SC=O(1)
+
+/**
+ * Definition for singly-linked list.
+ * struct ListNode {
+ *     int val;
+ *     ListNode *next;
+ *     ListNode(int x) : val(x), next(NULL) {}
+ * };
+ */
+
+class Solution {
+public:
+    bool searchKey(ListNode* head, int key) {
+        while (head != nullptr) {
+            if (head->val == key) 
+                return true;
+            head = head->next;
+        }
+        return false;
+    }
+};
