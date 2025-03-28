@@ -3,17 +3,17 @@ TC=O()
 SC=O()
 
 // Definition for a doubly-linked list node
-*struct Node {
- * int val;
- * Node* next;
- * Node* prev;
+/*struct Node {
+   int val;
+   Node* next;
+   Node* prev;
     
- * Node(int x) {
-    *   val = x;
-    *   next = nullptr;
-    *   prev = nullptr;
-  *  }
-*};
+    Node(int x) {
+        val = x;
+        next = nullptr;
+        prev = nullptr;
+    }
+};*/
 
 class Solution {
 public:
