@@ -1,6 +1,6 @@
 ques 1 (doubly linked list insertion at given position)
-TC=O()
-SC=O()
+TC=O(n)
+SC=O(1)
 
 /* Definition for a doubly-linked list node
  struct Node {
