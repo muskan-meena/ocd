@@ -2,12 +2,6 @@ ques 1
 TC=O()
 SC=O()
 
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(nullptr) {}
-};
-
 class Solution {
 public:
     bool hasCycle(ListNode *head) {
@@ -30,12 +24,6 @@ public:
 ques 2 
 TC=O()
 SC=O()
-
-struct ListNode {
-    int val;
-    ListNode *next;
-    ListNode(int x) : val(x), next(nullptr) {}
-};
 
 class Solution {
 public:
