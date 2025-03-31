@@ -1,6 +1,6 @@
-ques 1
-TC=O()
-SC=O()
+ques 1 (has a cycle)
+TC=O(n)
+SC=O(1)
 
 class Solution {
 public:
@@ -21,9 +21,9 @@ public:
     }
 };
 
-ques 2 
-TC=O()
-SC=O()
+ques 2 ( middle node of the linked list ) 
+TC=O(n)
+SC=O(1)
 
 class Solution {
 public:
